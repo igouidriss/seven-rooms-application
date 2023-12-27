@@ -1,0 +1,11 @@
+# This configuration is intended for development purpose, it's **your** responsibility to harden it for production
+name: sevenroomstohubapplication
+services:
+  kafka:
+    extends:
+      file: ./kafka.yml
+      service: kafka
+  zookeeper:
+    extends:
+      file: ./kafka.yml
+      service: zookeeper
