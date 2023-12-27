@@ -48,6 +48,26 @@ public class CacheConfiguration {
             createCache(cm, com.sbm.sevenrooms.domain.User.class.getName());
             createCache(cm, com.sbm.sevenrooms.domain.Authority.class.getName());
             createCache(cm, com.sbm.sevenrooms.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.sbm.sevenrooms.domain.Client.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.Client.class.getName() + ".customFields");
+            createCache(cm, com.sbm.sevenrooms.domain.Client.class.getName() + ".clientTags");
+            createCache(cm, com.sbm.sevenrooms.domain.Client.class.getName() + ".reservations");
+            createCache(cm, com.sbm.sevenrooms.domain.Client.class.getName() + ".memberGroups");
+            createCache(cm, com.sbm.sevenrooms.domain.MemberGroup.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.ClientTag.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.CustomField.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.ClientVenueStats.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.ClientPhoto.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.Reservation.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.Reservation.class.getName() + ".resTags");
+            createCache(cm, com.sbm.sevenrooms.domain.Reservation.class.getName() + ".resPosticketsItems");
+            createCache(cm, com.sbm.sevenrooms.domain.Reservation.class.getName() + ".resPosTickets");
+            createCache(cm, com.sbm.sevenrooms.domain.Reservation.class.getName() + ".resCustomFields");
+            createCache(cm, com.sbm.sevenrooms.domain.ResCustomField.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.ResPosTicket.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.ResPosticketsItem.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.ResTag.class.getName());
+            createCache(cm, com.sbm.sevenrooms.domain.TableNumber.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
